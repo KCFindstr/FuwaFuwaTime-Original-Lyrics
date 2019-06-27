@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FuwaFuwaTime Original Lyrics
 // @namespace    http://nanodesu.moe/
-// @version      0.3
+// @version      0.4
 // @description  Display Original lyrics in addition to Romaji on Aqours call guide.
 // @author       Findstr
 // @homepage     https://github.com/KCFindstr
@@ -41,7 +41,7 @@
 		try {
 			response = await $.get(baseurl + '/lyrics/' + id + '.json');
 		} catch (e) {
-			loaderElement.html('Failed to load lyrics.<br/><a href="https://github.com/KCFindstr/FuwaFuwaTime-Original-Lyrics/issues/new">Help us</a> by submitting raw lyrics!<br/>Timeline is unnecessary; but make sure your lyrics matches this page exactly.');
+			loaderElement.html('Failed to load lyrics.<br/><a href="https://github.com/KCFindstr/FuwaFuwaTime-Original-Lyrics/issues/new" target="_blank">Help us</a> by submitting raw lyrics!<br/>Timeline is unnecessary; but make sure your lyrics matches this page exactly.');
 			return;
 		}
 		
