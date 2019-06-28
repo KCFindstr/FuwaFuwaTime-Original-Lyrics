@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FuwaFuwaTime Original Lyrics
 // @namespace    http://nanodesu.moe/
-// @version      0.4
+// @version      0.5
 // @description  Display Original lyrics in addition to Romaji on Aqours call guide.
 // @author       Findstr
 // @homepage     https://github.com/KCFindstr
@@ -17,7 +17,7 @@
 	const space = '&nbsp;';
 
 	function renderObj(arr) {
-		$('.karaoke').each(function(index) {
+		$('.calls, .instructions, .lyrics, .notes').each(function(index) {
 			let top = arr[index].top;
 			let bottom = arr[index].bottom;
 			if (top === null || top === undefined || bottom === null || bottom === undefined)
